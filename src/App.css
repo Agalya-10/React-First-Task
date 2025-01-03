@@ -37,28 +37,27 @@
   }
 }
 
-
-
 .form1{
   font-family: 'Times New Roman', Times, serif;
   border: none;
-  width: 370px;
-  padding: 10px;
+  width: 350px;
+  padding: 10px 10px 1px 10px;
   margin: 15vh auto;
   border-radius: 5px;
-  /* background-color: rgba(247, 248, 248, 0.833); */
+  opacity: 0.5;
   box-shadow: rgba(60, 66, 87, 0.12) 0px 0px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
  
 }
+
 .head1{
   text-align: center;
   font-weight: bolder;
 }
 .box1{
-  width: 320px;
-  padding: 9px;
+  width: 300px;
+  padding: 7px;
   border-radius: 5px;
-  margin-top: 7px;
+  margin-top: 4px;
   margin-left: 16px;
   /* margin-bottom: 3px; */
   border: 1px solid gray;
@@ -66,20 +65,19 @@
   .submit{
     text-align: center;
   }
-.button2{
+.button1{
   display: inline-block;
   font-family: 'Times New Roman', Times, serif;
-  padding: 8px 19px;
+  padding: 6px 10px;
   font-size: 19px;
   font-weight: bold;
-  /* margin-top: 15px; */
   cursor: pointer;
   border-radius: 3px;
   border: none;
   background-color: rgb(31, 31, 31);
   color: white;
 }
-.button2:hover{
+.button1:hover{
   background-color: rgba(247, 248, 248, 0.833);
   color: black;
 }
@@ -92,6 +90,8 @@
 }
 .para1{
   text-align: center;
+  color: white;
+  /* margin-top: 4px; */
 }
 .link{
   text-decoration: none;
@@ -106,3 +106,60 @@
   padding-right: 19px;  
   color: black;
 }
+
+
+
+.form2{
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  /* width: 620px; */
+  padding: 15px;
+  /* margin: 5vh auto; */
+  border-radius: 5px;
+  box-shadow: rgba(60, 66, 87, 0.12) 0px 0px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+  /* background-color: rgba(247, 248, 248, 0.833); */
+}
+.box2{
+  border-radius: 3px;
+  margin-bottom: 5px;
+  border: 1px solid gray;
+}
+#cpassword{
+  margin-left: 25px;
+}
+.box3{
+  border-radius: 3px;
+  /* margin-top: 0px; */
+  border: 1px solid gray;
+  margin-bottom: 5px;
+}
+.box4{
+ 
+  border-radius: 3px;
+  margin-top: 7px;
+  border: 1px solid gray;
+  margin-bottom: 5px;
+}
+.error{
+  color:red;
+  font-size: 12px;
+}
+.button2{
+  display: inline-block;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 3px;
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+.button2:hover{
+  background-color: rgba(247, 248, 248, 0.833);
+  color: black;
+}
+.para2{
+  text-align: center;}
