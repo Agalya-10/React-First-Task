@@ -65,6 +65,7 @@ function Registerform() {
   };
 
   return (
+  
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
@@ -83,17 +84,17 @@ function Registerform() {
                 'rgba(60, 66, 87, 0.12) 0px 0px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px',
             }}
           />
-          <Form className="form2" style={{ width: '400px' }}>
+          <Form className="form2" style={{ width: '400px' }} >
             <h1 className="head1">{rowData ? 'Edit Form' : 'Register Form'}</h1>
             <div style={{ display: 'flex' }}>
               <div className="label1 mt-3" style={{ width: '100%' }}>
                 <label>Firstname</label>
-                <Field className="box2" name="firstname" style={{ width: '96%' }} />
+                <Field className="box2" name="firstname"   style={{ width: '96%' }} />
                 <ErrorMessage name="firstname" component="span" className="error" />
               </div>
               <div className="label1 mt-3" style={{ width: '100%' }}>
                 <label>Lastname</label>
-                <Field className="box2" name="lastname" style={{ width: '100%' }} />
+                <Field className="box2" name="lastname"  autoComplete="off"   style={{ width: '100%' }} />
                 <ErrorMessage name="lastname" component="span" className="error" />
               </div>
             </div>
@@ -104,7 +105,7 @@ function Registerform() {
             </div>
             <div className="label2" style={{ width: '100%' }}>
               <label>Mobile Number</label>
-              <Field className="box3" name="mobile" type="text" style={{ width: '100%' }} />
+              <Field className="box3" name="mobile"  type="text" style={{ width: '100%' }} />
               <ErrorMessage name="mobile" component="span" className="error" />
             </div>
             <div className="label1" style={{ width: '100%' }}>
@@ -115,6 +116,7 @@ function Registerform() {
                   name="password"
                   type={passwordVisible ? 'text' : 'password'}
                   style={{ width: '100%' }}
+            
                 />
                 <span
                   className="eye-icon"
@@ -129,9 +131,9 @@ function Registerform() {
                   onClick={() => setPasswordVisible(!passwordVisible)}
                 >
                   {passwordVisible ? (
-                    <i className="fas fa-eye"></i>
+                    <i className="fas fa-eye" style={{color:' rgb(235, 32, 59)'}}></i>
                   ) : (
-                    <i className="fas fa-eye-slash"></i>
+                    <i className="fas fa-eye-slash" style={{color:' rgb(235, 32, 59)'}}></i>
                   )}
                 </span>
               </div>
@@ -159,9 +161,9 @@ function Registerform() {
                   onClick={() => setConfirmPasswordVisible(!confirmPasswordVisible)}
                 >
                   {confirmPasswordVisible ? (
-                    <i className="fas fa-eye"></i>
+                    <i className="fas fa-eye" style={{color:' rgb(235, 32, 59)'}}></i>
                   ) : (
-                    <i className="fas fa-eye-slash"></i>
+                    <i className="fas fa-eye-slash" style={{color:' rgb(235, 32, 59)'}}></i>
                   )}
                 </span>
               </div>
@@ -192,6 +194,7 @@ function Registerform() {
                 href=""
                 onClick={() => navigate('/FormTask')}
                 className="link"
+                 style={{color:' rgb(235, 32, 59)'}}
               >
                 Login
               </a>

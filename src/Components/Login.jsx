@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
-import Image from '../Images/light.jpg';
+// import Image from '../Images/light.jpg';
 
 function Login() {
   const navigate = useNavigate();
@@ -54,17 +54,20 @@ function Login() {
     <div className="formhead">
       <form
         className="form1"
-        style={{
-          backgroundImage: `url(${Image})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        }}
+        // style={{
+        //   backgroundImage: `url(${Image})`,
+        //   backgroundSize: 'cover',
+        //   backgroundRepeat: 'no-repeat',
+        //   backgroundPosition: 'center',
+        // }}
         onSubmit={formik.handleSubmit}
       >
-        <h1 className="head1 mt-2">Login Form</h1>
+        <h1 className="head1 mt-2">Login</h1>
+        <p className="head1 mt-2 text-dark " style={{fontSize:'13px',fontWeight:'500'}}>Hello Again!</p>
 
-        <label className="label mt-4">Email</label>
+
+         
+          <label className="label mt-1" >Email</label>
         <input
           className="box1"
           type="email"
@@ -73,6 +76,8 @@ function Login() {
           value={formik.values.email}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
+          autoComplete='off'
+
         />
         {formik.touched.email && formik.errors.email && (
           <span style={{ color: 'red', fontSize: '13px', paddingLeft: '14px' }}>
@@ -81,7 +86,7 @@ function Login() {
         )}
         <br />
 
-        <label className="label mt-4">Password</label>
+        <label className="label mt-2">Password</label>
         <div style={{ position: 'relative' }}>
           <input
             className="box1"
@@ -105,9 +110,9 @@ function Login() {
             }}
           >
             {passwordVisible ? (
-              <i className="fas fa-eye"></i>
+              <i className="fas fa-eye" style={{color:' rgb(235, 32, 59)'}}></i>
             ) : (
-              <i className="fas fa-eye-slash"></i>
+              <i className="fas fa-eye-slash" style={{color:' rgb(235, 32, 59)'}}></i>
             )}
           </span>
         </div>
@@ -134,7 +139,7 @@ function Login() {
       
         <p className="para1">
           Don't have an account?{' '}
-          <a className="link" href="#" onClick={() => navigate('/Register')}>
+          <a className="link" href="#" onClick={() => navigate('/Register')} style={{color:' rgb(235, 32, 59)'}}>
             Signup
           </a>
         </p>

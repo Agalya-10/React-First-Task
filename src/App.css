@@ -38,19 +38,22 @@
 }
 
 .form1{
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   border: none;
   width: 350px;
   padding: 10px 10px 1px 10px;
   margin: 15vh auto;
   border-radius: 5px;
   box-shadow: rgba(60, 66, 87, 0.12) 0px 0px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+/* background-color: rgb(189, 181, 181); */
+  
  
 }
 
 .head1{
   text-align: center;
   font-weight: bolder;
+  color: rgb(235, 32, 59);
 }
 .box1{
   width: 300px;
@@ -66,31 +69,33 @@
   }
 .button1{
   display: inline-block;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   padding: 6px 10px;
   font-size: 19px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 3px;
   border: none;
-  background-color: rgb(31, 31, 31);
+  /* background-color: rgb(31, 31, 31); */
+  background-color: rgb(235, 32, 59);
   color: white;
 }
 .button1:hover{
-  background-color: rgba(247, 248, 248, 0.833);
+  background-color: rgb(196, 18, 42);
   color: black;
 }
 .label{
   margin-left: 16px;
   font-size: 19px;
-  /* margin-top: 40px; */
   font-weight: 500;
-
+}
+.box1:focus {
+  border: 1px solid rgb(235, 32, 59); 
+  outline: none; 
 }
 .para1{
   text-align: center;
-  color: white;
-  /* margin-top: 4px; */
+
 }
 .link{
   text-decoration: none;
@@ -109,7 +114,6 @@
 
 
 .form2{
-  font-family: 'Times New Roman', Times, serif;
   border: none;
   /* width: 620px; */
   padding: 15px;
@@ -145,7 +149,7 @@
 }
 .button2{
   display: inline-block;
-  font-family: 'Times New Roman', Times, serif;
+  /* font-family: 'Times New Roman', Times, serif; */
   padding: 3px;
   font-size: 19px;
   font-weight: bold;
@@ -153,12 +157,23 @@
   cursor: pointer;
   border-radius: 3px;
   border: none;
-  background-color: rgb(31, 31, 31);
+  background-color:rgb(235, 32, 59);
   color: white;
 }
 .button2:hover{
-  background-color: rgba(247, 248, 248, 0.833);
+  background-color: rgb(196, 18, 42);
   color: black;
 }
 .para2{
   text-align: center;}
+  .box2:focus {
+    border: 1px solid rgb(235, 32, 59); 
+    outline: none; 
+  }
+  .box3:focus {
+    border: 1px solid rgb(235, 32, 59); 
+    outline: none; 
+  } .box4:focus {
+    border: 1px solid rgb(235, 32, 59); 
+    outline: none; 
+  }
