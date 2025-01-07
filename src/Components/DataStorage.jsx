@@ -166,7 +166,7 @@ function Datastorage() {
         className="paper"
         style={{
           backgroundColor: 'ButtonFace',
-          height: '100%',
+          height: 'auto',
           width: '20%',
           display: 'flex',
           flexDirection: 'column',

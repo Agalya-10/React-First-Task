@@ -89,23 +89,23 @@ function Registerform() {
             <div style={{ display: 'flex' }}>
               <div className="label1 mt-3" style={{ width: '100%' }}>
                 <label>Firstname</label>
-                <Field className="box2" name="firstname"   style={{ width: '96%' }} />
+                <Field className="box2" name="firstname" placeholder="Firstname"  style={{ width: '96%' }}/>
                 <ErrorMessage name="firstname" component="span" className="error" />
               </div>
               <div className="label1 mt-3" style={{ width: '100%' }}>
                 <label>Lastname</label>
-                <Field className="box2" name="lastname"  autoComplete="off"   style={{ width: '100%' }} />
+                <Field className="box2" name="lastname"  autoComplete="off" placeholder="Lastname"  style={{ width: '100%' }} />
                 <ErrorMessage name="lastname" component="span" className="error" />
               </div>
             </div>
             <div className="label2" style={{ width: '100%' }}>
               <label>Email</label>
-              <Field className="box3" name="email" style={{ width: '100%' }} />
+              <Field className="box3" name="email" placeholder="Email" style={{ width: '100%' }} />
               <ErrorMessage name="email" component="span" className="error" />
             </div>
             <div className="label2" style={{ width: '100%' }}>
               <label>Mobile Number</label>
-              <Field className="box3" name="mobile"  type="text" style={{ width: '100%' }} />
+              <Field className="box3" name="mobile"  type="text" placeholder="Mobile Number" style={{ width: '100%' }} />
               <ErrorMessage name="mobile" component="span" className="error" />
             </div>
             <div className="label1" style={{ width: '100%' }}>
@@ -116,6 +116,7 @@ function Registerform() {
                   name="password"
                   type={passwordVisible ? 'text' : 'password'}
                   style={{ width: '100%' }}
+                  placeholder="Password"
             
                 />
                 <span
@@ -145,8 +146,10 @@ function Registerform() {
                 <Field
                   className="box2"
                   name="confirmPassword"
+                  placeholder="Comfirm Password"
                   type={confirmPasswordVisible ? 'text' : 'password'}
                   style={{ width: '100%' }}
+
                 />
                 <span
                   className="eye-icon"
