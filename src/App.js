@@ -1,8 +1,12 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './Components/Login';
-import Registerform from './Components/Register';
 import Datastorage from './Components/DataStorage';
+import Register from './Components/Register';
+import Registerform from './Components/Registerform';
+import City from './Components/City';
+import State from './Components/State';
+import Country from './Components/Country';
 {/* <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -14,11 +18,12 @@ function App() {
    <BrowserRouter>
    <Routes>
     <Route path='/login' element={<Login/>}></Route>
-    <Route path='/Register' element={<Registerform/>}></Route>
+    <Route path='/Register' element={<Register/>}></Route>
     <Route path='/Datastorage' element={<Datastorage/>}></Route>
-    
-
-
+    <Route path='/Registerform' element={<Registerform/>}></Route>
+    <Route path='/city' element={<City/>}></Route>
+    <Route path='/state' element={<State/>}></Route>
+    <Route path='/Country' element={<Country/>}></Route>
 
    </Routes>
    </BrowserRouter>

@@ -4,7 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import images from '../Images/register.jpg';
 
-function Register() {
+function Registerform() {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
   const navigate = useNavigate();
@@ -209,4 +209,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default Registerform;
