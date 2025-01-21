@@ -1,30 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { LocationContext } from '../Context/LocationContext';
 
-function Country() {
+const Country = () => {
+  const { country, setCountry } = useContext(LocationContext);
+
   return (
     <div>
-            <label className="label2" htmlFor="country">
-        Country
-      </label>
+      <label htmlFor="country">Country</label>
       <select
-        className="box4"
-        name="country"
-        // value={formData.country}
-        // onChange={handleChange}
+        value={country}
+        onChange={(e) => setCountry(e.target.value)}
+        className="form-control"
       >
-        <option value="" disabled>
-          Select Country
-        </option>
+        <option value="">Select Country</option>
         <option value="India">India</option>
-        <option value="Singapore">Singapore</option>
-        <option value="Malaysia">Malaysia</option>
-        <option value="Latvia">Latvia</option>
-        <option value="UK">UK</option>
         <option value="USA">USA</option>
-        <option value="Dubai">Dubai</option>
+        <option value="UK">UK</option>
       </select>
     </div>
-  )
-}
+  );
+};
 
-export default Country
+export default Country;
