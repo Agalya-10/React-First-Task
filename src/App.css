@@ -188,4 +188,12 @@
  }
  
  
- 
+ .form3{
+  border: none;
+  /* width: 620px; */
+  padding: 15px;
+  margin: 10vh auto;
+  border-radius: 5px;
+  box-shadow: rgba(60, 66, 87, 0.12) 0px 0px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+  /* background-color: rgba(247, 248, 248, 0.833); */
+}

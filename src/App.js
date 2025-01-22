@@ -29,8 +29,6 @@ function App() {
     <Route path='/locationmodal' element={<LocationModal/>}></Route> */}
     <Route path='/usecontext' element={<UseContextFormExample/>}></Route>
 
-
-
    </Routes>
    </BrowserRouter>
   );
