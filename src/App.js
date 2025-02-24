@@ -19,7 +19,7 @@ function App() {
   return (
    <BrowserRouter>
    <Routes>
-    <Route path='/login' element={<Login/>}></Route>
+    <Route path='/' element={<Login/>}></Route>
     <Route path='/Register' element={<Register/>}></Route>
     <Route path='/Datastorage' element={<Datastorage/>}></Route>
     {/* <Route path='/Registerform' element={<Registerform/>}></Route>
@@ -28,7 +28,6 @@ function App() {
     <Route path='/Country' element={<Country/>}></Route>
     <Route path='/locationmodal' element={<LocationModal/>}></Route> */}
     <Route path='/usecontext' element={<UseContextFormExample/>}></Route>
-
    </Routes>
    </BrowserRouter>
   );
